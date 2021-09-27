@@ -2,6 +2,14 @@
 
 SimpleServer uses an [ExpressJS](https://en.wikipedia.org/wiki/Express.js) web-server.
 
+Clone the repo
+
+```bash
+git clone https://github.com/VCityTeam/UD-Demo-vcity-lods-lyon-docker.git
+cd UD-Demo-vcity-lods-lyon-docker
+git checkout master
+```
+
 Build the docker image with
 
 ```bash
