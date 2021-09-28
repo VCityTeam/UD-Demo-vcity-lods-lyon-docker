@@ -1,6 +1,8 @@
 # Demo LODs
 
 Create a docker of a [demo of Lyon with LODs](https://github.com/VCityTeam/UD-Demo-vcity-lods-lyon).  
+_See the [online version](https://lods-lyon.vcityliris.data.alpha.grandlyon.com/)_.
+
 The demo uses a [SimpleServer](https://github.com/VCityTeam/UD-SimpleServer), based on [ExpressJS](https://en.wikipedia.org/wiki/Express.js) web-server.
 
 Clone the repo
