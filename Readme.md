@@ -15,13 +15,13 @@ cd UD-Demo-vcity-lods-lyon-docker
 Build the docker image with
 
 ```bash
-docker build -t demo_LODs .
+docker build -t demo_lods .
 ```
 
 and run the container with
 
 ```bash
-docker run -p 8080:80/tcp -t demo_LODs
+docker run -p 8081:80/tcp -t demo_lods
 ```
 
 and open a web browser on URL `http://localhost:8080/`
