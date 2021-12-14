@@ -24,4 +24,4 @@ and run the container with
 docker run -p 8081:80/tcp -t vcity/demo-lods-lyon
 ```
 
-and open a web browser on URL `http://localhost:8080/`
+and open a web browser on URL `http://localhost:8081/`
