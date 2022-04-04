@@ -9,19 +9,20 @@ Clone the repo
 
 ```bash
 git clone https://github.com/VCityTeam/UD-Demo-vcity-lods-lyon-docker.git
+git checkout 0525ba613e3f67c044079ea189786a95c3b
 cd UD-Demo-vcity-lods-lyon-docker
 ```
 
 Build the docker image with
 
 ```bash
-docker build -t vcity/demo-lods-lyon .
+docker build -t vcity/demo-lods .
 ```
 
 and run the container with
 
 ```bash
-docker run -p 8081:80/tcp -t vcity/demo-lods-lyon
+docker run -p 8081:80/tcp -t vcity/demo-lods
 ```
 
 and open a web browser on URL `http://localhost:8081/`
