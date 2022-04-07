@@ -8,9 +8,9 @@ services:
 
 jobs:
   include:
-    - stage: Demo-lods
+    - stage: Demo-py3dtilers
       script:
-        - docker build -t ud-viz:demo-lods .
+        - docker build -t ud-viz:demo-py3dtilers .
     - stage: "Markdown link checks"
       language: node_js
       node_js: 12
