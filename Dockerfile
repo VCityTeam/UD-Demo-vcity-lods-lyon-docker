@@ -18,7 +18,6 @@ RUN git --version
 
 RUN git clone https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon.git
 WORKDIR /UD-Demo-vcity-py3dtilers-lyon
-RUN git checkout demo
 RUN npm install
 RUN npm run build
 
