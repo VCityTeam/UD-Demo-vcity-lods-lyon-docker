@@ -16,16 +16,17 @@ RUN npm --version
 RUN apt-get install -y git
 RUN git --version
 
-RUN git clone https://github.com/VCityTeam/UD-Demo-vcity-lods-lyon.git
-WORKDIR UD-Demo-vcity-lods-lyon
+RUN git clone https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon.git
+WORKDIR /UD-Demo-vcity-py3dtilers-lyon
+RUN git checkout demo
 RUN npm install
 RUN npm run build
 
 ######### Install the ExpressJS server
 WORKDIR /
 RUN git clone https://github.com/VCityTeam/UD-SimpleServer.git
-WORKDIR UD-SimpleServer
+WORKDIR /UD-SimpleServer
 RUN npm install
 
 EXPOSE 80
-CMD [ "node", "./index.js", "/UD-Demo-vcity-lods-lyon", "80" ]
+CMD [ "node", "./index.js", "/UD-Demo-vcity-py3dtilers-lyon", "80" ]
