@@ -10,7 +10,8 @@ jobs:
   include:
     - stage: Demo-py3dtilers
       script:
-        - docker build -t ud-viz:demo-py3dtilers .
+        - docker build -t demo-py3dtilers .
+        - docker run --detach -p 127.0.0.1:80:4567 --rm -t demo-py3dtilers
     - stage: "Markdown link checks"
       language: node_js
       node_js: 12
