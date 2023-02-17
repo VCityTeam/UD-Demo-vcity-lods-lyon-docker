@@ -9,7 +9,6 @@ Clone the repo
 
 ```bash
 git clone https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker.git
-git checkout 0525ba613e3f67c044079ea189786a95c3b
 cd UD-Demo-vcity-py3dtilers-lyon-docker
 ```
 
