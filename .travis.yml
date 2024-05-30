@@ -1,8 +1,6 @@
 os: linux
 dist: focal
-language: node_js
-node_js:
-  - 14
+language: generic
 services:
   - docker
 
@@ -14,12 +12,12 @@ jobs:
         - docker run --detach -p 127.0.0.1:80:4567 --rm -t demo-py3dtilers
     - stage: "Markdown link checks"
       language: node_js
-      node_js: 14
+      node_js: 18
       script:
         - npm install --global remark-cli remark-validate-links
         - remark -u validate-links .
         - |
-          export FAILURE_THRESHOLD=1
+          export FAILURE_THRESHOLD=0
           export warnings=`remark -u validate-links . 2>&1 | grep warning | grep "Link to unknown" | wc -l`
           if [ $warnings -gt $FAILURE_THRESHOLD ]; then
             exit 1;
